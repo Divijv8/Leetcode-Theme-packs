@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Theme Studio</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <div>
+        <div class="brand-name">Theme Studio</div>
+        <div class="brand-sub">for LeetCode</div>
+      </div>
+    </div>
+    <label class="switch" title="Turn themes on or off">
+      <input type="checkbox" id="enabled">
+      <span class="track"><span class="thumb"></span></span>
+      <span class="sr">Enable Theme Studio</span>
+    </label>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-scene" id="heroScene"></div>
+    <div class="hero-copy">
+      <div class="hero-kicker" id="heroMode">Dark world</div>
+      <div class="hero-name" id="heroName">Ultraviolet</div>
+      <div class="hero-tag" id="heroTag">Moonlit lavender</div>
+    </div>
+    <div class="mock" aria-hidden="true">
+      <div class="mock-chips">
+        <span class="chip easy">Easy</span><span class="chip medium">Med.</span><span class="chip hard">Hard</span>
+      </div>
+      <div class="mock-code">
+        <span style="width:62%"></span><span style="width:44%" class="ac"></span><span style="width:70%"></span>
+      </div>
+      <div class="mock-submit">Submit</div>
+    </div>
+  </section>
+
+  <div class="section-head">
+    <span>Worlds</span>
+    <span class="hint"><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> cycles</span>
+  </div>
+  <div class="grid" id="grid" role="radiogroup" aria-label="Theme"></div>
+
+  <div class="section-head">
+    <span>Settings</span>
+    <button id="preview" class="btn">Preview “Accepted”</button>
+  </div>
+  <div class="settings">
+    <label class="row slider-row" id="strengthRow" title="How visible the painted backdrop is">
+      <b>Backdrop</b>
+      <input type="range" id="strength" min="0" max="100" step="5" aria-label="Backdrop strength">
+      <small id="strengthVal">70%</small>
+    </label>
+    <div class="tiles">
+      <label class="tile" title="Painted backdrop behind the page"><b>Scenery</b><input type="checkbox" class="tgl" id="scenery"></label>
+      <label class="tile" title="Let the scenery glow through panels and the editor"><b>Glass panels</b><input type="checkbox" class="tgl" id="glass"></label>
+      <label class="tile" title="A finisher animation when a submission is Accepted"><b>Accepted finisher</b><input type="checkbox" class="tgl" id="celebrate"></label>
+      <label class="tile" title="Space Grotesk for UI text, display font for problem titles"><b>Fresh font</b><input type="checkbox" class="tgl" id="font"></label>
+      <label class="tile" title="Small theme tab on the right edge of LeetCode"><b>Quick switcher</b><input type="checkbox" class="tgl" id="switcher"></label>
+      <span class="tile status" id="status" role="status"></span>
+    </div>
+  </div>
+
+  <script src="../src/themes.js"></script>
+  <script src="../src/scenery.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
