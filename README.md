@@ -20,6 +20,14 @@ A fresh coat of paint for leetcode.com: 8 themed "worlds", each with a painted b
 3. Click **Load unpacked** and pick this folder (the one containing `manifest.json`).
 4. Pin the extension and open any LeetCode page.
 
+## Screen Shots
+<img width="1895" height="867" alt="image" src="https://github.com/user-attachments/assets/2dcbcecb-87e0-4394-97a5-e4ea9d802850" />
+<img width="1907" height="851" alt="image" src="https://github.com/user-attachments/assets/8ad30de5-7c5d-45a3-a75e-56b13cc415e6" />
+<img width="1877" height="830" alt="image" src="https://github.com/user-attachments/assets/0e50f8be-2762-497b-bd4c-52d4ccb4e84f" />
+<img width="175" height="448" alt="image" src="https://github.com/user-attachments/assets/53563d75-d2c0-4b87-8dfd-471b83cc40bf" />
+
+
+
 ## Use
 
 - **Popup**: pick a world, set backdrop strength, toggle glass panels, the Accepted finisher, the font, and the on-page switcher. **Preview "Accepted"** plays the animation on the current LeetCode tab.
