@@ -271,7 +271,7 @@
     const el = document.createElement("div");
     el.id = "lt-celebrate";
     el.setAttribute("role", "status");
-    el.innerHTML = `<div class="lt-c-band"></div><div class="lt-c-inner"><div class="lt-c-kicker">SUBMISSION</div><div class="lt-c-word">ACCEPTED</div><div class="lt-c-sub"></div></div>`;
+    el.innerHTML = `<div class="lt-c-inner"><div class="lt-c-band"></div><div class="lt-c-kicker">SUBMISSION</div><div class="lt-c-word">ACCEPTED</div><div class="lt-c-sub"></div></div>`;
     el.querySelector(".lt-c-sub").textContent = title ? `${title} · ${quip}` : quip;
     const colors = [theme.accent, theme.accent2, theme.easy, "#ffffff"];
     for (let i = 0; i < 44; i++) {
